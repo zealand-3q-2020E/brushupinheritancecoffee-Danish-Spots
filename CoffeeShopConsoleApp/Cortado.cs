@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoffeeShopConsoleApp
 {
-    class Cortado : Coffee
+    class Cortado : Coffee, IMilk
     {
         public override int price()
         {
@@ -14,6 +14,11 @@ namespace CoffeeShopConsoleApp
         public override string Strength()
         {
             return "Medium";
+        }
+
+        public int mlMilk()
+        {
+            return 40;
         }
     }
 }
