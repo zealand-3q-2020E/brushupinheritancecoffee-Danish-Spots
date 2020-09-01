@@ -6,9 +6,26 @@ namespace CoffeeShopConsoleApp
 {
     class Cortado : Coffee, IMilk
     {
+        public Cortado(double d) : base(d)
+        {
+            
+        }
+
         public override int price()
         {
-            return 25;
+            int price = 25;
+            double dPrice = price * (1 - Discount);
+            try
+            {
+                if (price - dPrice > 5)
+                    throw new ArgumentOutOfRangeException();
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            return Convert.ToInt32(dPrice);
         }
 
         public override string Strength()

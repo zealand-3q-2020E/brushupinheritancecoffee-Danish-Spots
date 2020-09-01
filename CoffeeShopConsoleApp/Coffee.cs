@@ -9,6 +9,12 @@ namespace CoffeeShopConsoleApp
     /// </summary>
     public abstract class Coffee
     {
+
+        public Coffee(double discount)
+        {
+            Discount = discount;
+        }
+
         /// <summary>
         /// returns the price of the coffee
         /// It's possible to override this method, beacuse it is virtual 
@@ -20,5 +26,7 @@ namespace CoffeeShopConsoleApp
         }
 
         public abstract string Strength();
+
+        public double Discount { get; set; }
     }
 }
