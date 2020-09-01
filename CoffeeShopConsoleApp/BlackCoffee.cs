@@ -8,7 +8,7 @@ namespace CoffeeShopConsoleApp
     class BlackCoffee : Coffee
     {
 
-        public BlackCoffee(double d) : base(d)
+        public BlackCoffee(double d, string b) : base(d, b)
         {
 
         }

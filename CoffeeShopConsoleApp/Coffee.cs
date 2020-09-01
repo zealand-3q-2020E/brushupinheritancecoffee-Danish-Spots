@@ -10,9 +10,10 @@ namespace CoffeeShopConsoleApp
     public abstract class Coffee
     {
 
-        public Coffee(double discount)
+        public Coffee(double discount, string blend)
         {
             Discount = discount;
+            Blend = blend;
         }
 
         /// <summary>
@@ -28,5 +29,7 @@ namespace CoffeeShopConsoleApp
         public abstract string Strength();
 
         public double Discount { get; set; }
+
+        public string Blend { get; set; }
     }
 }

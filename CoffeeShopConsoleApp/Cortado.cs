@@ -6,7 +6,7 @@ namespace CoffeeShopConsoleApp
 {
     class Cortado : Coffee, IMilk
     {
-        public Cortado(double d) : base(d)
+        public Cortado(double d, string b) : base(d, b)
         {
             
         }

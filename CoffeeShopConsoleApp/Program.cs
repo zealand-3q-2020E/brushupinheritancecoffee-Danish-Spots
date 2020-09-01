@@ -12,16 +12,17 @@ namespace CoffeeShopConsoleApp
             // a list of all the orders for coffe in the coffee shop
             List<Coffee> orderList = new List<Coffee>()
             {
-                new Cortado(0.5),
-                new BlackCoffee(0.2),
-                new Latte(0.1)
+                new Cortado(0.5, "normal coffee beans"),
+                new BlackCoffee(0.2, "normal coffee beans"),
+                new Latte(0.1, "normal coffee beans"),
+                new Amazonas(0.2, "A mixture of beans from the brazil and chile")
 
             };
 
             List<IMilk> coffeesWMilks = new List<IMilk>()
             {
-                new Cortado(0.1),
-                new Latte(0.2)
+                new Cortado(0.1, "normal coffee beans"),
+                new Latte(0.2, "normal coffee beans")
             };
 
             foreach (var coffee in orderList)
